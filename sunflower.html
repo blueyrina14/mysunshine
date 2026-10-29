@@ -1,0 +1,759 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff2bd">
+
+    <title>Our Little Scrapbook 🌻</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Patrick+Hand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+    <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+
+    <header class="site-header">
+
+        <a class="brand" href="#home" data-page="home" aria-label="Our Little Scrapbook home">
+            <span class="brand-flower" aria-hidden="true">🌻</span>
+            <span>Our Little<br>Scrapbook <span class="tiny-heart">♡</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <button class="nav-link active" data-page="home">Home</button>
+            <button class="nav-link" data-page="scrapbook">Our Scrapbook</button>
+            <button class="nav-link" data-page="monthsary">Monthsary</button>
+            <button class="nav-link" data-page="moments">Our Moments</button>
+            <button class="nav-link" data-page="open-when">Open When…</button>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section class="page active home-page" id="home" data-section="home">
+
+            <div class="sun-doodle doodle-one">♡</div>
+            <div class="sun-doodle doodle-two">✦</div>
+
+            <div class="hero-copy">
+                <p class="eyebrow">a tiny corner of the universe, just for us</p>
+
+                <h1>Welcome to<br>our little world <span>♡</span></h1>
+
+                <p class="hero-subtitle">
+                    A collection of memories, random dates, and little moments
+                    <br class="desktop-only"> that mean everything to me.
+                </p>
+
+                <button class="primary-button" data-go="scrapbook">
+                    Explore Our Story <span>♡</span>
+                </button>
+            </div>
+
+            <div class="hero-bouquet-wrap" aria-label="A CSS sunflower bouquet">
+
+                <div class="sun-glow"></div>
+
+                <div class="css-bouquet" id="heroBouquet">
+
+                    <div class="bouquet-flowers">
+                        <div class="sunflower sf-one"><span class="flower-center"></span></div>
+                        <div class="sunflower sf-two"><span class="flower-center"></span></div>
+                        <div class="sunflower sf-three"><span class="flower-center"></span></div>
+                        <div class="sunflower sf-four"><span class="flower-center"></span></div>
+                        <div class="sunflower sf-five"><span class="flower-center"></span></div>
+                    </div>
+
+                    <div class="bouquet-stems">
+                        <i class="stem st-one"></i>
+                        <i class="stem st-two"></i>
+                        <i class="stem st-three"></i>
+                        <i class="stem st-four"></i>
+                        <i class="stem st-five"></i>
+
+                        <i class="leaf lf-one"></i>
+                        <i class="leaf lf-two"></i>
+                        <i class="leaf lf-three"></i>
+                        <i class="leaf lf-four"></i>
+                        <i class="leaf lf-five"></i>
+                    </div>
+
+                    <div class="bouquet-paper paper-back"></div>
+                    <div class="bouquet-paper paper-front"></div>
+
+                    <div class="bouquet-ribbon">
+                        <span class="ribbon-loop loop-left"></span>
+                        <span class="ribbon-loop loop-right"></span>
+                        <span class="ribbon-knot"></span>
+                        <span class="ribbon-tail tail-one"></span>
+                        <span class="ribbon-tail tail-two"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="secondary-button bloom-button" id="bloomButton">
+                Make the flowers bloom 🌼
+            </button>
+
+            <p class="scroll-hint">↓ &nbsp; scroll down, my sunshine &nbsp; ↓</p>
+
+            <div class="home-bottom-note paper-note">
+                <span class="tape"></span>little moments, big feelings <b>♡</b>
+            </div>
+
+        </section>
+
+        <!-- SCRAPBOOK -->
+        <section class="page paper-page" id="scrapbook" data-section="scrapbook">
+
+            <div class="page-heading">
+                <span class="heading-flower">✿</span>
+                <p class="eyebrow">bits and pieces of us</p>
+                <h2>Our Scrapbook <span>♡</span></h2>
+                <p>Little moments, big feelings. Add the real dates and stories whenever you want.</p>
+            </div>
+
+            <div class="memory-grid">
+
+                <!-- First scrapbook memory -->
+                <button class="memory-card tilt-left" data-memory="meet">
+                    <span class="tape"></span>
+                    <span class="card-sun">✿</span>
+                    <span class="memory-art art-sunset"><span>☀</span></span>
+                    <strong>The Day I first saw you</strong>
+                    <small>Third week of January</small>
+                    <span class="card-heart">♡</span>
+                </button>
+
+                <!-- Thought of you -->
+                <button class="polaroid rotate-left" data-memory="thought">
+                    <img class="photo-placeholder photo-sunflower"
+                         src="../sunset.jpg"
+                         alt="">
+                    <span>I thought of you</span>
+                </button>
+
+                <!-- Random dates -->
+                <button class="polaroid rotate-left" data-memory="picture">
+                    <img class="photo-placeholder photo-sunflower"
+                         src="../gala.jpg"
+                         alt="Random dates">
+                    <span>RANDOM DATES</span>
+                </button>
+
+                <!-- Monthsary memory -->
+                <button class="memory-card tilt-right" data-memory="monthsary">
+                    <span class="tape tape-gold"></span>
+                    <span class="memory-art art-paper">A little note<br>for my sunshine ♡</span>
+                    <strong>Our Special Date</strong>
+                    <small>August 30, 2026</small>
+                    <span class="card-heart">♡</span>
+                </button>
+
+                <!-- Museum memory -->
+                <button class="polaroid rotate-left" data-memory="remember">
+                    <img class="photo-placeholder photo-sunflower"
+                         src="../museo.jpg"
+                         alt="A memory to remember">
+                    <span>A Memory i never want to forget</span>
+                </button>
+
+                <!-- More memories -->
+                <button class="memory-card tilt-left" data-memory="more">
+                    <span class="tape tape-gold"></span>
+                    <span class="memory-art art-meadow">✿ 🌼 ✿ 🌻 ✿</span>
+                    <strong>And Many More…</strong>
+                    <small>OUR STORY CONTINUES</small>
+                    <span class="card-heart">♡</span>
+                </button>
+
+            </div>
+
+            <p class="page-footnote">Click any card, baby ✨</p>
+
+        </section>
+
+        <!-- MONTHSARY -->
+        <section class="page paper-page monthsary-page" id="monthsary" data-section="monthsary">
+
+            <div class="page-heading">
+                <span class="heading-flower">🌼</span>
+                <p class="eyebrow">one month, a thousand little reasons</p>
+                <h2>Our Monthsary <span>♡</span></h2>
+                <p>A little page for a very special milestone.</p>
+            </div>
+
+            <div class="monthsary-layout">
+
+                <div class="calendar-paper">
+                    <span class="tape"></span>
+                    <p class="calendar-title">OUR SPECIAL DATE</p>
+                    <div class="calendar-heart">♡</div>
+                    <label for="monthsaryDate">Add your monthsary date</label>
+                    <input type="date" id="monthsaryDate">
+                    <p class="small-note"></p>
+                </div>
+
+                <div class="monthsary-note paper-note">
+                    <span class="tape tape-gold"></span>
+
+                    <p class="handwriting">Happy Monthsary!</p>
+
+                    <p>Happy second monthsarry sa atin, baby ko! ❤️ Two months pa lang tayo, pero sobrang thankful na ako kasi dumating ka sa buhay ko. You make me happy in ways na hindi ko kayang ipaliwanag, and I'm so grateful na ikaw yung taong minamahal ko. Love, I'm sorry kasi wala akong gift na maibigay sa'yo ngayon, kahit gustong-gusto kitang bigyan ng something special para mapasaya ka. Pero sana malaman mo na kahit wala akong material na gift, hindi ibig sabihin na kulang ang pagmamahal ko sa'yo. If I could give you everything you deserve right now, I would, pero sa ngayon, I hope my love, time, and effort will make you feel how special you are to me.
+
+                    <br><br>Alam kong hindi ako perfect na partner, pero I promise na patuloy akong mag-iimprove, at gagawin ang best ko para sa atin. Gusto kong maging partner na marunong umintindi, makinig, mag-effort, at magmahal nang tama. Thank you for coming into my life, love, and for giving me so many reasons to be happy. Sana marami pa tayong monthsarries na ipagdiwang, more memories to make, and more challenges na malalampasan nating magkasama. Happy 2nd monthsarry, my love! ❤️ You are already one of the most beautiful gifts life has given me, and kahit hindi ko pa maibigay lahat ng gusto ko para sa'yo, sana hindi mo makalimutan kung gaano kita kamahal. I love you, always.</p>
+
+                    <p class="handwriting"></p>
+                    <p class="placeholder-label"></p>
+                </div>
+
+            </div>
+
+            <div class="timeline">
+                <h3>Our Little Timeline</h3>
+
+                <div class="timeline-track">
+
+                    <div class="timeline-item">
+                        <span class="timeline-icon">☻</span>
+                        <b>We Met</b>
+                        <small>January 16, 2026</small>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-icon">✿</span>
+                        <b>Started Talking</b>
+                        <small>February 25, 2026</small>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-icon">♡</span>
+                        <b>Our First Date</b>
+                        <small>June 13, 2026</small>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-icon">🌻</span>
+                        <b>Monthsary</b>
+                        <small>August 30, 2026</small>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- OUR MOMENTS -->
+        <section class="page paper-page" id="moments" data-section="moments">
+
+            <div class="page-heading">
+                <p class="eyebrow">photos, screenshots, and all the little things</p>
+                <h2>Our Moments <span>♡</span></h2>
+                <p></p>
+            </div>
+
+            <div class="polaroid-grid">
+
+                <!-- Photo 1 -->
+                <button class="polaroid rotate-left" data-memory="photo1">
+                    <img class="photo-placeholder photo-sunflower"
+                         src="../younme.jpg"
+                         alt="You + Me ♡">
+                    <span>You + Me ♡</span>
+                </button>
+
+                <!-- Photo 2 -->
+                <button class="polaroid rotate-right" data-memory="photo2">
+                    <img class="photo-placeholder photo-sunset"
+                         src="../favview.jpg"
+                         alt="My favorite view">
+                    <span>My favorite view</span>
+                </button>
+
+                <!-- Photo 3 -->
+                <button class="polaroid rotate-left" data-memory="photo3">
+                    <img class="photo-placeholder photo-cloud"
+                         src="../littlemoment.jpg"
+                         alt="A little happy moment">
+                    <span>A little happy moment</span>
+                </button>
+
+                <!-- Photo 4 -->
+                <button class="polaroid rotate-right" data-memory="photo4">
+                    <img class="photo-placeholder photo-coffee"
+                         src="../simplejoys.jpg"
+                         alt="Simple joys">
+                    <span>Simple joys</span>
+                </button>
+
+                <!-- Photo 5 -->
+                <button class="polaroid rotate-right" data-memory="photo5">
+                    <img class="photo-placeholder photo-meadow"
+                         src="../flowersnyou.jpg"
+                         alt="Flowers & you">
+                    <span>Flowers & you</span>
+                </button>
+
+                <!-- Photo 6 -->
+                <button class="polaroid rotate-left" data-memory="photo6">
+                    <img class="photo-placeholder photo-note"
+                         src="../together.jpg"
+                         alt="Always together">
+                    <span>Always together</span>
+                </button>
+
+            </div>
+
+            <div class="photo-tip">
+                <span class="tip-icon">✿</span>
+                <p>Click any photo to see its memory note.</p>
+            </div>
+
+        </section>
+
+        <!-- OPEN WHEN -->
+        <section class="page paper-page" id="open-when" data-section="open-when">
+
+            <div class="page-heading">
+                <p class="eyebrow">little envelopes for every mood</p>
+                <h2>Open When… <span>♡</span></h2>
+                <p></p>
+            </div>
+
+            <div class="envelope-grid">
+
+                <button class="envelope-card" data-envelope="miss">
+                    <span class="envelope">💌</span>
+                    <b>Open when<br>you miss me</b>
+                    <small>a little comfort note</small>
+                </button>
+
+                <button class="envelope-card" data-envelope="smile">
+                    <span class="envelope">💌</span>
+                    <b>Open when<br>you need a smile</b>
+                    <small>a tiny happy reminder</small>
+                </button>
+
+                <button class="envelope-card" data-envelope="anxious">
+                    <span class="envelope">💌</span>
+                    <b>Open when<br>you feel anxious</b>
+                    <small>take a soft little pause</small>
+                </button>
+
+                <button class="envelope-card" data-envelope="bored">
+                    <span class="envelope">💌</span>
+                    <b>Open when<br>you're bored</b>
+                    <small>something cute awaits</small>
+                </button>
+
+                <button class="envelope-card" data-envelope="motivation">
+                    <span class="envelope">💌</span>
+                    <b>Open when<br>you need motivation</b>
+                    <small>you've got this</small>
+                </button>
+
+                <button class="envelope-card" data-envelope="special">
+                    <span class="envelope">💌</span>
+                    <b>Open when<br>you feel special</b>
+                    <small>because you are</small>
+                </button>
+
+            </div>
+
+            <p class="page-footnote">Read it anytime 💛</p>
+
+        </section>
+
+    </main>
+
+    <footer>made with love & sunshine <span>🌻</span></footer>
+
+    <!-- REUSABLE MEMORY POPUP -->
+    <dialog class="memory-dialog" id="memoryDialog">
+
+        <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+
+        <span class="dialog-flower">🌻</span>
+
+        <p class="eyebrow" id="dialogEyebrow">A LITTLE MEMORY</p>
+
+        <h2 id="dialogTitle">A memory for you</h2>
+
+        <p id="dialogText">Your note will go here later. ♡</p>
+
+        <button class="primary-button dialog-ok" id="dialogOk">Back to scrapbook ♡</button>
+
+    </dialog>
+
+
+
+<style>
+* { box-sizing: border-box; }
+:root {
+  --cream: #fff9e9; --paper: #fffdf4; --yellow: #ffd45a; --gold: #e9a928;
+  --brown: #77451f; --soft-brown: #a06d38; --green: #578047; --line: #ead6a8;
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--cream); color: var(--brown); font-family: 'Quicksand', sans-serif; overflow-x: hidden; }
+button, input { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+.site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px clamp(16px, 4vw, 54px); background: rgba(255, 245, 202, .94); border-bottom: 1px solid #f0d98e; box-shadow: 0 3px 12px #95631a0d; backdrop-filter: blur(12px); }
+.brand { display: flex; align-items: center; gap: 9px; color: var(--brown); text-decoration: none; font-family: 'Patrick Hand', cursive; font-size: 1.12rem; line-height: .95; flex-shrink: 0; }
+.brand-flower { font-size: 2rem; }
+.tiny-heart { color: #d99519; }
+.main-nav { display: flex; align-items: center; justify-content: flex-end; gap: clamp(5px, 1.2vw, 20px); }
+.nav-link { background: transparent; border: 0; padding: 10px 8px; color: #865b2c; border-bottom: 2px solid transparent; cursor: pointer; font-size: .85rem; font-weight: 700; }
+.nav-link:hover, .nav-link.active { color: #9b6413; border-bottom-color: #e7aa2b; }
+.menu-toggle { display: none; border: 1px solid #e6c86d; background: #fff8dc; color: var(--brown); border-radius: 10px; padding: 8px 12px; font-size: 1.2rem; }
+.page { display: none; min-height: calc(100vh - 130px); padding: 55px clamp(18px, 6vw, 90px) 75px; }
+.page.active { display: block; animation: pageIn .45s ease both; }
+.home-page { position: relative; overflow: hidden; min-height: 850px; padding-top: 85px; background: radial-gradient(ellipse at 73% 55%, #fff0b4 0, transparent 37%), linear-gradient(140deg, #fff3bd 0%, #fffbee 48%, #ffedac 100%); }
+.home-page::before, .home-page::after { content: "✿"; position: absolute; color: #f4c84d; opacity: .25; font-size: 11rem; pointer-events: none; }
+.home-page::before { left: -45px; bottom: 25px; transform: rotate(-25deg); }
+.home-page::after { right: -35px; bottom: 40px; transform: rotate(18deg); }
+.hero-copy { position: relative; z-index: 4; width: min(570px, 58%); margin-left: 6%; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; color: #ae7c36; font-size: .72rem; font-weight: 800; }
+h1, h2, h3, .handwriting { font-family: 'Patrick Hand', cursive; font-weight: 400; }
+.hero-copy h1 { margin: 15px 0; font-size: clamp(3.3rem, 6vw, 5.8rem); line-height: .98; color: #8a4f1e; }
+.hero-copy h1 span, .page-heading h2 span { color: #e6aa28; }
+.hero-subtitle { line-height: 1.8; font-weight: 600; color: #8b653c; }
+.primary-button, .secondary-button { border: 1.5px solid #b97c20; border-radius: 30px; padding: 13px 23px; background: linear-gradient(135deg, #ffe58b, #ffc83e); color: #75451b; box-shadow: 0 4px 0 #dca12d; cursor: pointer; font-weight: 800; transition: transform .2s, box-shadow .2s; }
+.primary-button:hover, .secondary-button:hover { transform: translateY(-3px); box-shadow: 0 7px 0 #dca12d; }
+.hero-copy .primary-button { margin-top: 18px; }
+.hero-bouquet-wrap { position: absolute; z-index: 2; width: min(440px, 48vw); height: 470px; right: 7%; bottom: 80px; }
+.sun-glow { position: absolute; width: 90%; aspect-ratio: 1; top: 10%; left: 5%; border-radius: 50%; background: #ffdf6d; opacity: .45; filter: blur(40px); }
+.css-bouquet { position: absolute; inset: 0; transform-origin: bottom center; animation: bouquetFloat 4s ease-in-out infinite; }
+.bouquet-flowers { position: absolute; inset: 0; z-index: 4; }
+.sunflower { position: absolute; width: 112px; height: 112px; border-radius: 50%; background: repeating-conic-gradient(#ffcf2f 0 10deg, #ffe575 10deg 18deg, #eaa21b 18deg 21deg, transparent 21deg 30deg); filter: drop-shadow(0 3px 2px #9e6b2430); }
+.sf-one { left: 8%; top: 26%; transform: scale(.83) rotate(-12deg); }
+.sf-two { left: 34%; top: 7%; transform: scale(.85) rotate(6deg); }
+.sf-three { right: 6%; top: 26%; transform: scale(.82) rotate(12deg); }
+.sf-four { left: 25%; top: 34%; transform: scale(1.08) rotate(-5deg); }
+.sf-five { right: 22%; top: 36%; transform: scale(.95) rotate(10deg); }
+.flower-center { position: absolute; width: 43%; height: 43%; top: 28.5%; left: 28.5%; border-radius: 50%; border: 4px solid #a66b29; background: radial-gradient(circle at 35% 30%, #8e602e 0 2px, transparent 3px), radial-gradient(circle at 65% 60%, #352216 0 2px, transparent 3px), radial-gradient(circle at 70% 25%, #513018 0 2px, transparent 3px), radial-gradient(circle, #68401f, #382216); box-shadow: inset 0 0 0 4px #805020; }
+.bouquet-stems { position: absolute; inset: 0; z-index: 1; }
+.stem { position: absolute; top: 37%; height: 51%; width: 8px; border-radius: 9px; background: linear-gradient(90deg, #3d6d36, #78a854, #416f37); transform-origin: top; }
+.st-one { left: 25%; transform: rotate(-15deg); }.st-two { left: 42%; transform: rotate(-7deg); }.st-three { left: 57%; transform: rotate(4deg); }.st-four { left: 71%; transform: rotate(14deg); }.st-five { left: 51%; transform: rotate(1deg); }
+.leaf { position: absolute; width: 65px; height: 31px; border-radius: 100% 0 100% 0; background: linear-gradient(135deg, #8cb95d, #47763b); }
+.lf-one { top: 58%; left: 13%; transform: rotate(20deg); }.lf-two { top: 69%; left: 31%; transform: rotate(180deg); }.lf-three { top: 61%; right: 9%; transform: rotate(-24deg); }.lf-four { top: 73%; right: 25%; transform: rotate(175deg); }.lf-five { top: 50%; left: 54%; transform: rotate(20deg); }
+.bouquet-paper { position: absolute; z-index: 2; bottom: 5%; height: 48%; }
+.paper-back { left: 9%; width: 82%; background: linear-gradient(130deg, #ffe5a0, #fff4d0 55%, #f9d66c); clip-path: polygon(0 0, 100% 8%, 73% 100%, 26% 100%); transform: rotate(-3deg); }
+.paper-front { left: 19%; width: 62%; height: 39%; background: linear-gradient(90deg, #fff0c8, #ffdc7b, #fff5d8); clip-path: polygon(0 0, 100% 0, 76% 100%, 24% 100%); border-bottom: 3px solid #e7b64b; }
+.bouquet-ribbon { position: absolute; z-index: 5; left: 0; bottom: 24%; width: 100%; height: 60px; }
+.ribbon-loop { position: absolute; top: 0; width: 64px; height: 42px; background: linear-gradient(135deg, #ffe47d, #f2ad26); border: 2px solid #d99720; }
+.loop-left { left: calc(50% - 59px); border-radius: 75% 15% 65% 20%; transform: rotate(18deg); }.loop-right { left: calc(50% - 5px); border-radius: 15% 75% 20% 65%; transform: rotate(-18deg); }
+.ribbon-knot { position: absolute; left: calc(50% - 11px); top: 9px; width: 23px; height: 25px; border-radius: 7px; background: #e8a322; border: 2px solid #d18a19; }
+.ribbon-tail { position: absolute; top: 29px; width: 34px; height: 72px; background: linear-gradient(90deg, #ffdc61, #f5b72b); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%); }
+.tail-one { left: calc(50% - 36px); transform: rotate(9deg); }.tail-two { left: calc(50% + 4px); transform: rotate(-9deg); }
+.bloom-button { position: absolute; z-index: 6; right: 17%; bottom: 45px; background: #fff8dc; box-shadow: none; }
+.scroll-hint { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; color: #a47a3c; font-size: .8rem; animation: bob 2s ease-in-out infinite; }
+.sun-doodle { position: absolute; color: #dca52b; font-size: 2.4rem; }.doodle-one { right: 42%; top: 11%; transform: rotate(15deg); }.doodle-two { left: 4%; bottom: 28%; }
+.paper-note { position: relative; background: #fffdf3; border: 1px solid #efdfb9; box-shadow: 2px 5px 12px #895d2114; }
+.tape { position: absolute; width: 72px; height: 20px; top: -9px; left: calc(50% - 36px); background: #f4d17aaf; transform: rotate(-5deg); }
+.tape-gold { background: #f1c04eaa; transform: rotate(6deg); }
+.home-bottom-note { position: absolute; bottom: 28px; left: 5%; padding: 14px 24px; transform: rotate(-4deg); font-family: 'Patrick Hand', cursive; font-size: 1.1rem; }
+.home-bottom-note b { color: #e2a51f; }
+.page-heading { text-align: center; max-width: 720px; margin: 0 auto 45px; }
+.heading-flower { font-size: 2rem; }
+.page-heading h2 { font-size: clamp(2.5rem, 5vw, 4rem); margin: 5px 0; color: #81481c; }
+.page-heading p:last-child { line-height: 1.7; color: #98754b; }
+.paper-page { background-color: #fff9e9; background-image: radial-gradient(#d7b56a22 .8px, transparent .8px); background-size: 13px 13px; }
+.memory-grid { max-width: 1050px; margin: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.memory-card { position: relative; display: flex; flex-direction: column; align-items: center; padding: 18px 17px 14px; background: #fffdf6; border: 1px solid #e8d7b5; box-shadow: 2px 6px 12px #8a63201c; color: var(--brown); cursor: pointer; min-height: 265px; transition: transform .2s, box-shadow .2s; }
+.memory-card:hover { transform: translateY(-6px) rotate(0deg); box-shadow: 3px 12px 20px #8a63202b; }
+.tilt-left { transform: rotate(-2deg); }.tilt-right { transform: rotate(2deg); }
+.memory-card .tape { top: -8px; }
+.memory-card strong { font-family: 'Patrick Hand', cursive; font-size: 1.25rem; margin: 12px 0 5px; }
+.memory-card small { color: #b18b58; font-size: .65rem; letter-spacing: 1.2px; }
+.card-heart { color: #e1a128; align-self: flex-end; margin-top: auto; }
+.card-sun { position: absolute; top: 24px; left: 24px; color: #dba52a; }
+.memory-art { width: 100%; height: 130px; display: grid; place-items: center; overflow: hidden; font-size: 2rem; }
+.art-sunset { background: linear-gradient(#efc17d 0%, #f6d9a4 45%, #bf9866 46%, #f3d2a0 100%); color: #fff2b3; }
+.art-flowers { background: #e8d6a4; letter-spacing: 3px; }.art-sky { background: linear-gradient(#a9c5ca, #f7e0ae); color: #fff8e7; font-size: 2.4rem; }.art-paper { background: #fff1c9; font-family: 'Patrick Hand', cursive; font-size: 1.45rem; transform: rotate(-1deg); }.art-doodle { background: #f4e4b7; color: #d8a12d; }.art-meadow { background: linear-gradient(#fff1b9, #e2dba1); }
+.page-footnote { text-align: center; margin-top: 42px; color: #a17c4b; font-size: .9rem; }
+.monthsary-layout { max-width: 900px; margin: auto; display: grid; grid-template-columns: .9fr 1.1fr; gap: 32px; align-items: stretch; }
+.calendar-paper { position: relative; background: #fffdf6; border: 1px solid #e8d8b5; box-shadow: 2px 7px 14px #875e2015; padding: 35px 24px; text-align: center; transform: rotate(-1deg); }
+.calendar-title { font-size: .75rem; letter-spacing: 2px; font-weight: 800; }
+.calendar-heart { font-size: 4rem; color: #e6ae2d; font-family: 'Patrick Hand', cursive; margin: 8px; }
+.calendar-paper label { display: block; margin: 12px 0; font-size: .85rem; font-weight: 700; }
+.calendar-paper input { max-width: 100%; border: 1px solid #e5c77e; border-radius: 8px; padding: 10px; background: #fff9e8; color: var(--brown); }
+.small-note { font-size: .75rem; line-height: 1.6; color: #a17e4e; }
+.monthsary-note { padding: 38px 30px; transform: rotate(1deg); line-height: 1.8; }
+.monthsary-note .handwriting { font-size: 1.65rem; line-height: 1.2; color: #9a5d24; }
+.placeholder-label { font-size: .65rem; letter-spacing: 1.2px; color: #b28c52; margin-top: 28px; }
+.timeline { max-width: 1000px; margin: 65px auto 0; text-align: center; }
+.timeline h3 { font-size: 2.3rem; }
+.timeline-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; position: relative; margin-top: 25px; }
+.timeline-track::before { content: ""; position: absolute; top: 28px; left: 10%; right: 10%; border-top: 2px dashed #e7c46c; }
+.timeline-item { position: relative; display: flex; flex-direction: column; align-items: center; gap: 7px; z-index: 1; }
+.timeline-icon { display: grid; place-items: center; width: 58px; height: 58px; background: #fff5cf; border: 1px solid #e4bd5c; border-radius: 50%; font-size: 1.5rem; }
+.timeline-item b { font-family: 'Patrick Hand', cursive; font-size: 1.15rem; }.timeline-item small { color: #ad8955; font-size: .75rem; }
+.polaroid-grid { max-width: 1000px; margin: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.polaroid { display: flex; flex-direction: column; gap: 12px; padding: 12px 12px 18px; background: #fffef8; border: 1px solid #eee1c6; box-shadow: 2px 6px 13px #8860251a; color: var(--brown); cursor: pointer; font-family: 'Patrick Hand', cursive; font-size: 1.2rem; transition: transform .2s; }
+.polaroid:hover { transform: rotate(0) scale(1.03); }
+.rotate-left { transform: rotate(-3deg); }.rotate-right { transform: rotate(2.5deg); }
+.photo-placeholder { min-height: 180px; width: 100%; display: grid; place-items: center; font-size: 3.3rem; }
+.photo-sunflower { background: linear-gradient(145deg, #f7df89, #e4b84c); }.photo-sunset { background: linear-gradient(#d4d6c5, #f5c77c 55%, #bb8a54); color: #fff1ba; }.photo-cloud { background: linear-gradient(#c2d9d9, #f5e4b9); color: white; }.photo-coffee { background: linear-gradient(135deg, #c7a17b, #f0d9ad); color: #fff5d8; }.photo-meadow { background: linear-gradient(#fff0b0, #c4c98c); color: #d99e27; }.photo-note { background: #f4e5bb; font-family: 'Patrick Hand', cursive; color: #9d7137; font-size: 2rem; text-align: center; }
+.photo-tip { max-width: 760px; margin: 45px auto 0; padding: 16px 20px; text-align: center; background: #fff1c3; border: 1px dashed #e0bd61; line-height: 1.7; font-size: .9rem; }
+.envelope-grid { max-width: 1000px; margin: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.envelope-card { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 22px 14px; border: 1px solid #e7d2a4; border-radius: 12px; background: linear-gradient(145deg, #fffdf4, #fff0c8); box-shadow: 2px 5px 10px #8a632016; color: var(--brown); cursor: pointer; transition: transform .2s; }
+.envelope-card:hover { transform: translateY(-5px) rotate(-1deg); }
+.envelope { font-size: 3.3rem; filter: drop-shadow(0 3px 1px #b98b3022); }
+.envelope-card b { font-family: 'Patrick Hand', cursive; font-size: 1.35rem; line-height: 1.15; }
+.envelope-card small { color: #a78350; font-size: .75rem; }
+footer { padding: 22px; text-align: center; background: #fff0b8; color: #91602c; font-family: 'Patrick Hand', cursive; font-size: 1.1rem; }
+footer span { display: inline-block; animation: sunshine 12s linear infinite; }
+.petal-layer { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 30; }
+.falling-petal { position: absolute; top: -35px; width: 14px; height: 21px; border-radius: 100% 0 100% 0; background: linear-gradient(135deg, #ffe986, #efb222); animation: fall linear forwards; }
+.memory-dialog { width: min(440px, calc(100% - 32px)); border: 1px solid #e4cb8e; border-radius: 18px; padding: 35px 28px 28px; background: #fffaf0; color: var(--brown); text-align: center; box-shadow: 0 20px 80px #53371340; }
+.memory-dialog::backdrop { background: #5d431c66; backdrop-filter: blur(4px); }
+.dialog-close { position: absolute; top: 8px; right: 12px; border: 0; background: transparent; color: #98652a; font-size: 1.8rem; cursor: pointer; }
+.dialog-flower { font-size: 2.6rem; }.memory-dialog h2 { font-size: 2rem; margin: 10px 0; }.memory-dialog p:not(.eyebrow) { line-height: 1.7; color: #967044; }.dialog-ok { margin-top: 14px; }
+@keyframes pageIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bouquetFloat { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-9px) rotate(1deg); } }
+@keyframes sunshine { to { transform: rotate(360deg); } }
+@keyframes bob { 50% { transform: translateY(5px); } }
+@keyframes fall { to { transform: translate(var(--drift), 110vh) rotate(600deg); } }
+@media (max-width: 900px) {
+  .site-header { flex-wrap: wrap; }.menu-toggle { display: block; }
+  .main-nav { display: none; flex-basis: 100%; flex-direction: column; align-items: stretch; gap: 2px; padding: 6px 0 10px; }
+  .main-nav.open { display: flex; }.nav-link { text-align: left; padding: 12px; border-bottom: 0; border-radius: 8px; }.nav-link.active { background: #ffedb1; }
+  .hero-copy { width: 100%; margin: 0; text-align: center; }.hero-bouquet-wrap { position: relative; width: min(430px, 92vw); height: 420px; right: auto; bottom: auto; margin: 15px auto 0; }
+  .home-page { padding-top: 55px; padding-bottom: 100px; }.bloom-button { right: 50%; transform: translateX(50%); bottom: 48px; white-space: nowrap; }.bloom-button:hover { transform: translate(50%, -3px); }
+  .home-bottom-note { display: none; }.scroll-hint { bottom: 13px; }
+}
+@media (max-width: 650px) {
+  .page { padding: 42px 17px 55px; }.hero-copy h1 { font-size: clamp(3rem, 14vw, 4.5rem); }.hero-subtitle { font-size: .95rem; }.desktop-only { display: none; }
+  .hero-bouquet-wrap { height: 355px; }.sunflower { width: 88px; height: 88px; }.memory-grid, .polaroid-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 14px; }.memory-card { min-height: 230px; padding: 13px 10px; }.memory-art { height: 105px; }.memory-card strong { font-size: 1.08rem; }.monthsary-layout { grid-template-columns: 1fr; gap: 24px; }.timeline-track { grid-template-columns: repeat(2, 1fr); row-gap: 25px; }.timeline-track::before { display: none; }.envelope-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }.envelope-card { padding: 18px 9px; }.envelope-card b { font-size: 1.2rem; }.photo-placeholder { min-height: 130px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
+</style>
+
+<script>
+
+    const navButtons = document.querySelectorAll("[data-page]");
+const pages = document.querySelectorAll(".page");
+const mainNav = document.getElementById("mainNav");
+const menuToggle = document.getElementById("menuToggle");
+const petalLayer = document.getElementById("petalLayer");
+const bouquet = document.getElementById("heroBouquet");
+const bloomButton = document.getElementById("bloomButton");
+
+function showPage(pageId) {
+  const target = document.getElementById(pageId);
+  if (!target) return;
+
+  pages.forEach(page => page.classList.toggle("active", page.id === pageId));
+  document.querySelectorAll(".nav-link").forEach(button => {
+    const active = button.dataset.page === pageId;
+    button.classList.toggle("active", active);
+    if (active) button.setAttribute("aria-current", "page");
+    else button.removeAttribute("aria-current");
+  });
+
+  mainNav.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open navigation");
+  window.location.hash = pageId;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+navButtons.forEach(button => {
+  button.addEventListener("click", event => {
+    event.preventDefault();
+    showPage(button.dataset.page);
+  });
+});
+
+document.querySelectorAll("[data-go]").forEach(button => {
+  button.addEventListener("click", () => showPage(button.dataset.go));
+});
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = mainNav.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+});
+
+window.addEventListener("hashchange", () => {
+  const id = window.location.hash.slice(1);
+  if (document.getElementById(id)?.classList.contains("page")) {
+    pages.forEach(page => page.classList.toggle("active", page.id === id));
+    document.querySelectorAll(".nav-link").forEach(button => button.classList.toggle("active", button.dataset.page === id));
+  }
+});
+
+function createPetals(amount = 18) {
+  for (let i = 0; i < amount; i++) {
+    const petal = document.createElement("span");
+    petal.className = "falling-petal";
+    petal.style.left = Math.random() * 100 + "%";
+    petal.style.animationDuration = (5 + Math.random() * 6) + "s";
+    petal.style.animationDelay = (Math.random() * 1.5) + "s";
+    petal.style.setProperty("--drift", (Math.random() * 180 - 90) + "px");
+    petalLayer.appendChild(petal);
+    petal.addEventListener("animationend", () => petal.remove());
+  }
+}
+
+bloomButton.addEventListener("click", () => {
+  bouquet.classList.remove("just-bloomed");
+  void bouquet.offsetWidth;
+  bouquet.classList.add("just-bloomed");
+  createPetals(32);
+  bloomButton.textContent = "A little sunshine, just for you ☀️";
+  setTimeout(() => {
+    bouquet.classList.remove("just-bloomed");
+  }, 1100);
+});
+
+const dialog = document.getElementById("memoryDialog");
+const dialogTitle = document.getElementById("dialogTitle");
+const dialogText = document.getElementById("dialogText");
+const dialogEyebrow = document.getElementById("dialogEyebrow");
+const dialogClose = document.getElementById("dialogClose");
+const dialogOk = document.getElementById("dialogOk");
+
+const memoryNotes = {
+    meet: [
+        "THE BEGINNING",
+        "The day we met",
+        "January 16, 2026. Exactly at our CC01 class, when I first saw you across the room."
+    ],
+
+    thought: [
+        "A RANDOM LITTLE DAY",
+        "I thought of you",
+        "A yellow sunset"
+    ],
+
+    picture: [
+        "RANDOM DATES",
+        "Random dates after class",
+        "McDonald's first before going on our little gala."
+    ],
+
+    monthsary: [
+        "OUR FIRST MONTHSARY",
+        "A little milestone",
+        "Anniversary, I love you."
+    ],
+
+    remember: [
+        "A MEMORY TO KEEP",
+        "I'll remember this",
+        "The day we went to the museum and spent the rest of the day together."
+    ],
+
+    more: [
+        "TO BE CONTINUED",
+        "And many more…",
+        "This scrapbook is only getting started. We'll make so many more memories together."
+    ],
+
+    photo1: [
+        "OUR MOMENTS",
+        "You + me",
+        "Our little date at Ecopark."
+    ],
+
+    photo2: [
+        "OUR MOMENTS",
+        "My favorite view",
+        "A beautiful sunset in the background while you smiled beside me."
+    ],
+
+    photo3: [
+        "OUR MOMENTS",
+        "A little happy moment",
+        "Our little dates at McDonald's."
+    ],
+
+    photo4: [
+        "OUR MOMENTS",
+        "Simple joys",
+        "Your favorite matcha, one of the little things that make you happy."
+    ],
+
+    photo5: [
+        "OUR MOMENTS",
+        "Flowers & you",
+        "Ang ganda mo, at ang ganda rin ng mga sunflowers. 🌻"
+    ],
+
+    photo6: [
+        "OUR MOMENTS",
+        "Always together",
+        "Our own little world at Star City, making memories I'll always treasure."
+    ]
+};
+document.querySelectorAll("[data-memory]").forEach(card => {
+  card.addEventListener("click", () => {
+    const note = memoryNotes[card.dataset.memory];
+    if (!note) return;
+    dialogEyebrow.textContent = note[0];
+    dialogTitle.textContent = note[1];
+    dialogText.textContent = note[2];
+    dialog.showModal();
+  });
+});
+
+const envelopeNotes = {
+  miss: ["OPEN WHEN…", "When you miss me", "Hi, my loveee! If you're reading this, baka namimiss mo ako ngayon, pero I hope you know na miss na miss din kita. I wish I could be beside you right now, hug you, and tell you how much you mean to me. Kahit hindi tayo magkasama, please remember na you're always in my heart. Hanggang sa muli nating pagkikita, imagine mo na lang na niyayakap kita nang mahigpit. I love you so much, baby ko! Mwaaa! "],
+  smile: ["OPEN WHEN…", "When you need a smile", "If you're reading this, I hope I can make you smile kahit sa simpleng letter lang na 'to. I just want to remind you na no matter how tiring your day gets, I hope you never forget that you have someone who loves you so much. If I could be there with you right now, I'd tease you until you laugh, listen to all your little stories, and do my best to make your day a little better. You don't always need a reason to be happy, love, but I hope one of your reasons will always be the love we share. So smile ka na, my pretty baby, kasi your happiness means so much to me. I love you more than these little words could ever explain! Mwaaa! "],
+  anxious: ["OPEN WHEN…", "When you feel anxious", "Hi, love. Take a deep breath muna, okay? You don't have to figure everything out today, and you don't need to carry all your worries at once. It's okay to rest, to feel overwhelmed, and to take things one step at a time. If things get too heavy, you can always talk to me, and I'll do my best to listen and understand you. Please be gentle with yourself, baby, because you're trying your best, and I'm proud of you. I'm always rooting for you, my love. "],
+  bored: ["OPEN WHEN…", "When you're bored", "If I were there, for sure inaasar na kita ngayon or kung ano-anong kalokohan na naman ang ginagawa natin. Since wala ako diyan, consider this letter as your little dose of lambing from me! Remember our random conversations, our little dates, and all those simple moments na naging special dahil magkasama tayo. You can always message me kahit gaano ka-random ang kwento mo, kasi I love hearing about your day. Now go smile, love! Bawal mainip nang sobra, may nagmamahal sa'yo rito!"],
+  motivation: ["OPEN WHEN…", "When you need motivation", "My love, I just want you to know na proud na proud ako sa'yo. I know hindi lahat ng araw ay madali, and sometimes you might feel tired or doubt yourself, pero please don't forget how far you've come. You don't have to be perfect, and you don't have to accomplish everything all at once. Take your time, rest when you need to, and try again when you're ready. I'll always be here cheering for you, celebrating your little wins, and reminding you how capable you are. Kaya mo 'yan, baby ko! I believe in you, always. Mahal na mahal kita!"],
+  special: ["OPEN WHEN…", "When you need a reminder", "I hope you know how special you are to me, even on days when I don't always know how to express it. It's the little things about you, your smile, your laugh, your sweetness, and even your kulit moments that make me fall for you more. You don't have to do anything extraordinary to deserve my love, because I love you for being you. If I could let you see yourself through my eyes, I hope you'd understand why you're so precious to me. I'm so lucky that I get to love you, baby, and if I could choose all over again, I'd still choose you. Always ikaw, my love. Mahal na mahal kita."]
+};
+
+document.querySelectorAll("[data-envelope]").forEach(envelope => {
+  envelope.addEventListener("click", () => {
+    const note = envelopeNotes[envelope.dataset.envelope];
+    dialogEyebrow.textContent = note[0];
+    dialogTitle.textContent = note[1];
+    dialogText.textContent = note[2];
+    dialog.showModal();
+  });
+});
+
+dialogClose.addEventListener("click", () => dialog.close());
+dialogOk.addEventListener("click", () => dialog.close());
+dialog.addEventListener("click", event => {
+  if (event.target === dialog) dialog.close();
+});
+
+// Date picker is intentionally local to this open page; no personal data is sent anywhere.
+const monthsaryDate = document.getElementById("monthsaryDate");
+monthsaryDate.addEventListener("change", () => {
+  const timelineLabel = document.querySelector(".timeline-item:last-child small");
+  if (!monthsaryDate.value) {
+    timelineLabel.textContent = "date to add";
+    return;
+  }
+  const date = new Date(monthsaryDate.value + "T12:00:00");
+  timelineLabel.textContent = date.toLocaleDateString(undefined, {
+    year: "numeric", month: "short", day: "numeric"
+  });
+});
+
+createPetals(10);
+
+</script>
+
+</body>
+</html>
